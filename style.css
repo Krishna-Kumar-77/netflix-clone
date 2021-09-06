@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+
+}
+
+.overlay:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    z-index: 100000;
+    background: linear-gradient(to bottom,#000,transparent);
+}
+
+.overlay::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 10000;
+    background: linear-gradient(to top,#000,transparent);
+}
+.sec1 .head{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 50px;
+    z-index: 100000;
+}
+.sec1 .head img{
+    width: 13%;
+}
+.sec1 .head a{
+    color: #fff;
+    text-decoration: none;
+    background-color: #e50914;
+    padding: 8px 18px;
+    border-radius: 5px;
+}
+.sec2{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    
+}
+
+.sec2 .backgroundimg{
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -10000;
+
+   
+}
+.sec2 .box{
+    position:absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+ 
+}
+.sec2 .box .heading{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10000;
+}
+.sec2 .box .heading h2{
+    font-size: 3.125rem;
+    color: #fff;
+    letter-spacing: 2px;
+    width: 80%;
+}
+.sec2 .box .heading h5{
+    font-size: 1.625rem;
+    color: #fff;
+   font-weight: 400;
+   padding: 1rem 0;
+}
+.sec2 .box .heading p{
+    font-size: 1.2rem;
+    color: #fff;
+   font-weight: 500;
+   padding: 15px 0;
+   padding-bottom: 20px;
+ 
+
+}
+.sec2 .box .search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+
+}
+.sec2 .box .search input{
+    font-size: 16px;
+    border: 1px solid #8c8c8c;
+    outline: none;
+    color: #000;
+    border-radius: 2px;
+    padding:10px 10px 5px 0 ;
+    min-width: 400px;
+    height: 50px;
+    align-items: center;
+
+}
+.sec2 .box .search a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    border-radius: 2px;
+    background: #e50914;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.45);
+    font-size: 1.625rem;
+    line-height: 50px;
+    min-width: 310px;
+    padding: 0 30px;
+}
+.sec3{
+    position:absolute;
+    top: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 4rem;
+    border-bottom: 0.6rem solid #111;
+}
+.sec3 .talk{
+    width: 40%;
+}
+.sec3 .talk h1{
+    font-size: 3.3rem;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+.sec3 .talk p{
+    font-size: 1.7rem;
+    color: #fff;
+}
+.sec3 .img{
+    width: 45%;
+}
+.sec3 .img .part1{
+    width: 100%;
+}
+.sec4{
+    position:absolute;
+    top: 180vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 4rem;
+    border-bottom: 0.6rem solid #111;
+}
+.sec4 .talk{
+    width: 45%;
+}
+.sec4 .talk h1{
+    font-size: 3.3rem;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    width: 100%;
+    color: #fff;
+}
+.sec4 .talk p{
+    font-size: 1.7rem;
+    color: #fff;
+}
+.sec4 .img{
+    width: 48%;
+}
+.sec4 .img .part2{
+    width: 100%;
+}
+.sec5{
+    position:absolute;
+    top: 260vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 4rem;
+    border-bottom: 0.6rem solid #111;
+}
+.sec5 .talk{
+    width: 40%;
+}
+.sec5 .talk h1{
+    font-size: 3.3rem;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+.sec5 .talk p{
+    font-size: 1.7rem;
+    color: #fff;
+}
+.sec5 .img{
+    width: 45%;
+}
+.sec5 .img .part3{
+    width: 100%;
+}
+.footer{
+    position: absolute;
+    top: 340vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    padding: 4rem;
+}
+.footer .one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    padding: 4rem;
+    width: 40%;
+}
+.footer .one li{
+    padding: 7px 0;
+}
+.footer .one li a{
+    color: #ccc;
+    text-decoration: none;
+}
+.footer .one li a:hover{
+    border-bottom: 1px solid #ccc;
+}
+@media  screen and( max-width: 787px) {
+    
+    .sec1 .head{
+      
+        padding: 20px 50px;
+      
+    }
+    .sec1 .head img{
+        width: 20%;
+    }
+    .sec2 .box .heading h2{
+        font-size: 3.1rem;
+        letter-spacing: 1.5px;
+        width: 100%;
+    }
+    .sec2 .box .heading h5{
+        font-size: 1.4rem;
+       padding: 0.8rem 0;
+    }
+    .sec2 .box .heading p{
+        font-size: 1.1rem;
+       padding: 13px 0;
+       padding-bottom: 17px;
+     
+    
+    }
+    .sec2 .box .search{
+      
+        flex-direction: column;
+       
+    
+    }
+    .sec2 .box .search input{
+        
+        min-width: 310px;
+       margin-bottom: 20px;
+    
+    }
+    
+}
+
